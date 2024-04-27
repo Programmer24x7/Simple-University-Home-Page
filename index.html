@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" type="x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>University</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="logo.png"></a>
+            <div class="nav-links" id="navclick">
+                <i class="fa-solid fa-rectangle-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Course</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+    
+        <div class="text-box">
+            <h1> Worlds Biggest University</h1>
+            <p>Making Website is now onne of the easiest thing in the world. 
+                You just need to learn HTML,CSS,<br> JavaScript and 
+            you are good to go.</p>
+            <a href="" class="hero-btn"> Visit Us to Know More</a>
+        </div>
+        
+    </section>
+</body>
+<script>
+    var navclick = document.getElementById("navclick");
+    function showmenu(){
+        navclick.style.right = "0";
+    }
+    function hidemenu(){
+        navclick.style.right = "-100%";
+    }
+</script>
+</html>
